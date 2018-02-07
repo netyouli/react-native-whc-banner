@@ -50,7 +50,7 @@ Your component's render method, use Banner:
 
 ### Basic usage
 
-```javascript
+```jsx
 render() {
         return (
             <Banner style = {styles.banner}
@@ -65,7 +65,7 @@ render() {
 
 ### Custom Banner
 
-```javascript
+```jsx
 render() {
         return (
             <Banner style = {styles.banner}
