@@ -41,7 +41,7 @@
 将下面代码插入到`render()`方法中：   
 
 
-```javascript
+```jsx
  render() {
          return (
              <Banner style = {styles.banner}>
@@ -55,7 +55,7 @@
 
 ### 用例  
 
-```javascript
+```jsx
 render() {
         return (
             <Banner style = {styles.banner}
@@ -70,7 +70,7 @@ render() {
 
 ### 自定义 Banner
 
-```javascript
+```jsx
 render() {
         return (
             <Banner style = {styles.banner}
