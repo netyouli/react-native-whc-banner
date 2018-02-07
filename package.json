@@ -1,7 +1,7 @@
 {
-  "name": "react-native-whc-loading",
-  "version": "1.0.3",
-  "description": "A react native module to banner play component, it works on iOS and Android.",
+  "name": "react-native-whc-banner",
+  "version": "1.0.0",
+  "description": "A react native module to banner auto play loop component, it works on iOS and Android.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

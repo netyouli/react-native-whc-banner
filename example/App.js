@@ -23,63 +23,62 @@ const {
 
 export default class App extends Component<{}> {
   render() {
-      const items = [require('./images/banner1.png'),require('./images/banner2.png'),require('./images/banner3.png')];
+      const images = [require('./images/banner1.png'),require('./images/banner2.png'),require('./images/banner3.png')];
       return (
           <View style={styles.view}>
               <Banner style = {styles.banner}
-                      indicaterType={IndicaterType.dot}
-              >
-                  <View><Image style = {styles.img} source = {items[0]} /></View>
-                  <View><Image style = {styles.img} source = {items[1]} /></View>
-                  <View><Image style = {styles.img} source = {items[2]} /></View>
+                      indicaterType={IndicaterType.dot}>
+                  <View><Image style = {styles.img} source = {images[0]} /></View>
+                  <View><Image style = {styles.img} source = {images[1]} /></View>
+                  <View><Image style = {styles.img} source = {images[2]} /></View>
               </Banner>
+
               <Banner style = {styles.banner}
                       indicaterType={IndicaterType.circle}
-                      indicaterAlign={IndicaterAlign.right}
-              >
-                  <View><Image style = {styles.img} source = {items[1]} /></View>
-                  <View><Image style = {styles.img} source = {items[0]} /></View>
-                  <View><Image style = {styles.img} source = {items[2]} /></View>
+                      indicaterAlign={IndicaterAlign.right}>
+                  <View><Image style = {styles.img} source = {images[1]} /></View>
+                  <View><Image style = {styles.img} source = {images[0]} /></View>
+                  <View><Image style = {styles.img} source = {images[2]} /></View>
               </Banner>
+
               <Banner style = {styles.banner}
                       indicaterType={IndicaterType.number}
                       indicaterAlign={IndicaterAlign.center}
                       autoLoop={true}
                       autoPlay={true}
-                      duration={1500}
-              >
-                  <View><Image style = {styles.img} source = {items[2]} /></View>
-                  <View><Image style = {styles.img} source = {items[1]} /></View>
-                  <View><Image style = {styles.img} source = {items[0]} /></View>
+                      duration={1500}>
+                  <View><Image style = {styles.img} source = {images[2]} /></View>
+                  <View><Image style = {styles.img} source = {images[1]} /></View>
+                  <View><Image style = {styles.img} source = {images[0]} /></View>
               </Banner>
+
               <Banner style = {styles.banner}
                       indicaterType={IndicaterType.title}
                       indicaterAlign={IndicaterAlign.center}
                       titles={['react-native banner', 'ios native banner', 'android native banner']}
                       autoLoop={true}
                       autoPlay={true}
-                      duration={1500}
-              >
-                  <View><Image style = {styles.img} source = {items[2]} /></View>
-                  <View><Image style = {styles.img} source = {items[0]} /></View>
-                  <View><Image style = {styles.img} source = {items[1]} /></View>
+                      duration={1500}>
+                  <View><Image style = {styles.img} source = {images[2]} /></View>
+                  <View><Image style = {styles.img} source = {images[0]} /></View>
+                  <View><Image style = {styles.img} source = {images[1]} /></View>
               </Banner>
+
               <Banner style = {styles.banner}
                       indicaterType={IndicaterType.number_title}
                       indicaterAlign={IndicaterAlign.right}
                       titles={['react-native banner', 'ios native banner', 'android native banner']}
                       autoLoop={true}
                       autoPlay={true}
-                      duration={1500}
-              >
+                      duration={1500}>
                   <TouchableHighlight onPress = {() => {Alert.alert('banner1')}}>
-                      <Image style = {styles.img} source = {items[2]} resizeMode = {'stretch'}/>
+                      <Image style = {styles.img} source = {images[2]} resizeMode = {'stretch'}/>
                   </TouchableHighlight>
                   <TouchableHighlight onPress = {() => {Alert.alert('banner2')}}>
-                      <Image style = {styles.img} source = {items[1]} resizeMode = {'stretch'}/>
+                      <Image style = {styles.img} source = {images[1]} resizeMode = {'stretch'}/>
                   </TouchableHighlight>
                   <TouchableHighlight onPress = {() => {Alert.alert('banner3')}}>
-                      <Image style = {styles.img} source = {items[0]} resizeMode = {'stretch'}/>
+                      <Image style = {styles.img} source = {images[0]} resizeMode = {'stretch'}/>
                   </TouchableHighlight>
               </Banner>
           </View>

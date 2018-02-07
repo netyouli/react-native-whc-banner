@@ -1,5 +1,5 @@
 # react-native-whc-banner
-A react native module to banner play component, it works on iOS and Android.
+A react native module to banner auto play loop component, it works on iOS and Android.
 
 [ ![release](https://img.shields.io/github/release/netyouli/react-native-whc-banner.svg?maxAge=2592000?style=flat-square)](https://github.com/netyouli/react-native-whc-banner/releases)
 [ ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/netyouli/react-native-whc-banner/pulls)
