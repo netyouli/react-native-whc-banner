@@ -102,11 +102,11 @@ IndicaterType.title   | Title text indicator
 IndicaterType.number_title   | Number and title text indicator
 IndicaterType.dot   | Dot indicator
 
-indicaterAlign   | Description
+IndicaterAlign   | Description
 -----------------  | -----------
-indicaterAlign.left   | Indicator element left alignment
-indicaterAlign.center   | Indicator element center alignment
-indicaterAlign.right   | Indicator element right alignment
+IndicaterAlign.left   | Indicator element left alignment
+IndicaterAlign.center   | Indicator element center alignment
+IndicaterAlign.right   | Indicator element right alignment
 
 
 Props              | Type     | Optional | Default     | Description

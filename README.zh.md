@@ -108,11 +108,11 @@ IndicaterType.title   | 创建文字指示器
 IndicaterType.number_title   | 创建数字和文字指示器
 IndicaterType.dot   | 创建点指示器
 
-indicaterAlign(指示器元素对齐类型)   | 描述
+IndicaterAlign(指示器元素对齐类型)   | 描述
 -----------------  | -----------
-indicaterAlign.left   | 左对齐
-indicaterAlign.center   | 居中对齐
-indicaterAlign.right   | 又对齐
+IndicaterAlign.left   | 左对齐
+IndicaterAlign.center   | 居中对齐
+IndicaterAlign.right   | 又对齐
 
 属性              | 类型     | 可选 | 默认值     | 描述
 ----------------- | -------- | -------- | ----------- | -----------
