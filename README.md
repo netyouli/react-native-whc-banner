@@ -54,7 +54,7 @@ Your component's render method, use Banner:
 render() {
         return (
             <Banner style = {styles.banner}
-                                indicaterType = {IndicaterType.circle}>
+                    indicaterType = {IndicaterType.circle}>
                 <View><Image style = {styles.img} source = {images[0]}/></View>
                 <View><Image style = {styles.img} source = {images[1]}/></View>
                 <View><Image style = {styles.img} source = {images[2]}/></View>

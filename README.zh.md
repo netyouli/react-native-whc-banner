@@ -26,7 +26,7 @@
 ## Demo  
 * [Example](https://github.com/netyouli/react-native-whc-banner/tree/master/example)
 
-![Screenshots](https://raw.githubusercontent.com/netyouli/react-native-whc-banner/master/example/screenshots/react-native-whc-loading.gif)
+![Screenshots](https://raw.githubusercontent.com/netyouli/react-native-whc-banner/master/example/screenshots/react-native-whc-banner.gif)
 
 ## 如何使用？  
 
@@ -59,7 +59,7 @@
 render() {
         return (
             <Banner style = {styles.banner}
-                                indicaterType = {IndicaterType.circle}>
+                    indicaterType = {IndicaterType.circle}>
                 <View><Image style = {styles.img} source = {images[0]}/></View>
                 <View><Image style = {styles.img} source = {images[1]}/></View>
                 <View><Image style = {styles.img} source = {images[2]}/></View>
