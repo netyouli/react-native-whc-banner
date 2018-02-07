@@ -35,7 +35,7 @@ Add `react-native-whc-banner` to your js file.
 
 Your component's render method, use Banner:
 
-```javascript
+```jsx
  render() {
          return (
              <Banner style = {styles.banner}>
