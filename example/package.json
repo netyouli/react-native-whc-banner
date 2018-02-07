@@ -14,7 +14,8 @@
     "babel-jest": "22.1.0",
     "babel-preset-react-native": "4.0.0",
     "jest": "22.1.4",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "react-native-whc-banner": "^1.0.0"
   },
   "jest": {
     "preset": "react-native"

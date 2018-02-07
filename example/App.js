@@ -14,7 +14,7 @@ import {
     Image,
 } from 'react-native';
 
-import Banner, {IndicaterAlign, IndicaterType} from './react-native-whc-banner';
+import Banner, {IndicaterAlign, IndicaterType} from 'react-native-whc-banner';
 
 const {
     width = 0,
