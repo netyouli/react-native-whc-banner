@@ -49,11 +49,11 @@ export const IndicaterType = {
 };
 
 export const IndicaterAlign = {
-    /** 点指示器靠左 **/
+    /** 指示器内容靠左对齐 **/
     left: 0,
-    /** 点指示器居中 **/
+    /** 指示器内容居中对齐 **/
     center: 1,
-    /** 点指示器靠右 **/
+    /** 指示器内容靠右对齐 **/
     right: 2,
 };
 
@@ -316,8 +316,9 @@ export default class Banner extends Component {
 
     _onMomentumScrollEnd = (e) => {
         const offsetx = e.nativeEvent.contentOffset.x;
+        const scwidth = e.nativeEvent.layoutMeasurement.width;
         const count = this.elementCount;
-        const index = Math.floor((offsetx - width / 2.0) / width) + 1;
+        const index = Math.floor((offsetx - scwidth / 2.0) / scwidth) + 1;
         const {
             autoLoop,
         } = this.props;
@@ -344,11 +345,12 @@ export default class Banner extends Component {
             autoPlay,
             autoLoop,
         } = this.props;
+        const scwidth = e.nativeEvent.layoutMeasurement.width;
 
         if (autoLoop) {
             const offsetx = e.nativeEvent.contentOffset.x;
             const count = this.elementCount;
-            if (offsetx === (count + 1) * width) {
+            if (offsetx === (count + 1) * scwidth) {
                 this._goIndex(1);
             }else if (offsetx === 0) {
                 this._goIndex(count);
@@ -359,6 +361,7 @@ export default class Banner extends Component {
 
     _onScroll = (e) => {
         const offsetx = e.nativeEvent.contentOffset.x;
+        const scwidth = e.nativeEvent.layoutMeasurement.width;
         const {
             autoLoop,
         } = this.props;
@@ -370,7 +373,7 @@ export default class Banner extends Component {
                     return;
                 }
                 this._goIndex(count);
-            }else if (offsetx >= (count + 1) * width) {
+            }else if (offsetx >= (count + 1) * scwidth) {
                 if (!isLeftScroll) {
                     return;
                 }
@@ -448,7 +451,7 @@ export default class Banner extends Component {
                 </ScrollView>
                 <BannerIndicater
                     ref = {(ref) => {this.indicater = ref}}
-                    style = {indicaterStyle}
+                    indicaterStyle = {indicaterStyle}
                     indicaterType = {indicaterType}
                     indicaterAlign = {indicaterAlign}
                     dotStyle = {dotStyle}

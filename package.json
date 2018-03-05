@@ -1,6 +1,6 @@
 {
   "name": "react-native-whc-banner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react native module to banner auto play loop component, it works on iOS and Android.",
   "main": "index.js",
   "scripts": {
