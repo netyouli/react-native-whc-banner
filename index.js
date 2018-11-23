@@ -427,7 +427,7 @@ export default class Banner extends Component {
         this.elementCount = length;
         let newChildren = [];
         if (autoLoop && length > 0) {
-            newChildren.push(children[length - 1], ...children, children[0]);
+            newChildren.push(React.cloneElement(children[length - 1], {key: length + 1}), ...children, React.cloneElement(children[0], {key: length + 2}));
         }else {
             newChildren.push(...children);
         }
